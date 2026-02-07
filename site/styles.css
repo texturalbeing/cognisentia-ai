@@ -1,10 +1,12 @@
-/* cognisentia — styles
-   Palette drawn from the original site:
-   Background: deep dark (#0a0a0a)
-   Text: warm off-white (#e8ddd3)
-   Accent: muted teal (#6b9e9e)
-   Warm accent: dusty coral (#c4877a)
-   Subtle: muted gold (#b8a88a)
+/* cognisentia.ai — professional front
+   Palette from original site:
+   Dark: #0a0a0a
+   Text on dark: #e8ddd3 (warm off-white)
+   Teal: #6b9e9e
+   Coral: #c4877a
+   Gold: #b8a88a
+   Services band: #5f9a93
+   About band: #c9978b
 */
 
 *,
@@ -16,138 +18,380 @@
 }
 
 html {
-    font-size: 18px;
+    font-size: 17px;
     scroll-behavior: smooth;
 }
 
 body {
     background-color: #0a0a0a;
     color: #e8ddd3;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
     line-height: 1.7;
-    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+/* ---- Navigation ---- */
+
+.site-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(10, 10, 10, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(232, 221, 211, 0.06);
+}
+
+.nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.9rem 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-main {
-    max-width: 680px;
-    width: 100%;
-    padding: 4rem 2rem;
+.nav-logo img {
+    height: 36px;
+    width: auto;
+    opacity: 0.9;
 }
 
-/* Hero */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    color: #c8bdb3;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #e8ddd3;
+}
+
+/* ---- Hero ---- */
 
 .hero {
-    margin-bottom: 4rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #2a2520;
+    padding: 8rem 2rem 4rem;
+    background-color: #0a0a0a;
 }
 
-h1 {
-    font-size: 2.8rem;
+.hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.6rem;
     font-weight: 400;
-    letter-spacing: 0.08em;
+    line-height: 1.2;
     color: #e8ddd3;
-    margin-bottom: 0.5rem;
-}
-
-.tagline {
-    font-size: 1.1rem;
-    color: #6b9e9e;
-    font-style: italic;
-    letter-spacing: 0.02em;
-}
-
-/* Introduction */
-
-.introduction {
-    margin-bottom: 4rem;
-}
-
-.introduction p {
     margin-bottom: 1.2rem;
-    color: #c8bdb3;
 }
 
-.introduction p:last-child {
-    color: #b8a88a;
-    font-style: italic;
-    margin-top: 2rem;
+.hero-text p {
+    font-size: 1.05rem;
+    color: #b0a69c;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    max-width: 440px;
 }
 
-/* Piece */
-
-.piece {
-    margin-bottom: 4rem;
-    padding: 2.5rem 0;
-    border-top: 1px solid #2a2520;
-    border-bottom: 1px solid #2a2520;
+.hero-cta {
+    display: inline-block;
+    padding: 0.75rem 2.2rem;
+    background-color: #c4877a;
+    color: #0a0a0a;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    border-radius: 30px;
+    transition: background-color 0.2s ease;
 }
 
-.piece-label {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: #6b9e9e;
+.hero-cta:hover {
+    background-color: #d4978a;
+}
+
+.hero-image img {
+    border-radius: 6px;
+}
+
+/* ---- Services ---- */
+
+.services {
+    background-color: #5f9a93;
+    color: #0a0a0a;
+    padding: 4.5rem 2rem;
+}
+
+.services-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.services h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #faf6f2;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.service-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #faf6f2;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #e8e2dc;
+}
+
+/* ---- Divider ---- */
+
+.divider {
+    line-height: 0;
+    overflow: hidden;
+    max-height: 280px;
+}
+
+.divider img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+/* ---- About ---- */
+
+.about {
+    background-color: #c9978b;
+    color: #1a1410;
+    padding: 4.5rem 2rem;
+}
+
+.about-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: #1a1410;
+}
+
+.about-text p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+    color: #2a2018;
+}
+
+.about-image img {
+    border-radius: 6px;
+}
+
+/* ---- Contact ---- */
+
+.contact {
+    background-color: #0a0a0a;
+    padding: 4.5rem 2rem;
+}
+
+.contact-inner {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #c4877a;
+}
+
+.contact-inner > p {
+    color: #b0a69c;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
     margin-bottom: 1.5rem;
 }
 
-.piece-title {
-    font-size: 1.15rem;
-    font-weight: 400;
-    font-style: italic;
-    color: #c4877a;
-    margin-bottom: 2rem;
-    line-height: 1.5;
-}
-
-.prose p {
-    margin-bottom: 1.3rem;
-    color: #d4cac0;
-    font-size: 0.95rem;
-    line-height: 1.8;
-}
-
-.prose em {
+.contact-details a {
     color: #e8ddd3;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #3a3430;
+    transition: border-color 0.2s ease;
 }
 
-.attribution {
-    margin-top: 2rem;
+.contact-details a:hover {
+    border-color: #6b9e9e;
+}
+
+.contact-location {
+    color: #6a6058;
     font-size: 0.85rem;
-    color: #6b9e9e;
+    letter-spacing: 0.04em;
 }
 
-/* Footer */
+/* ---- Footer ---- */
 
-footer {
-    padding-top: 2rem;
-    font-size: 0.8rem;
-    color: #5a524a;
+.site-footer {
+    border-top: 1px solid #1a1815;
+    padding: 2rem;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.78rem;
+    color: #4a423a;
     letter-spacing: 0.03em;
 }
 
-.colophon {
+.footer-inner p {
     margin-bottom: 0.3rem;
 }
 
-.collaborators {
-    color: #4a423a;
+.footer-tagline {
+    color: #3a3430;
 }
 
-/* Responsive */
+.passage {
+    color: #3a3430;
+    text-decoration: none;
+    cursor: default;
+    transition: color 0.4s ease;
+}
 
-@media (max-width: 600px) {
+.passage:hover {
+    color: #4a5e5a;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 768px) {
     html {
         font-size: 16px;
     }
 
-    main {
-        padding: 2.5rem 1.5rem;
+    .hero {
+        padding: 7rem 1.5rem 3rem;
     }
 
-    h1 {
-        font-size: 2.2rem;
+    .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        max-width: none;
+    }
+
+    .hero-image {
+        order: -1;
+        max-width: 400px;
+    }
+
+    .services {
+        padding: 3.5rem 1.5rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .divider {
+        max-height: 160px;
+    }
+
+    .divider img {
+        height: 160px;
+    }
+
+    .about {
+        padding: 3.5rem 1.5rem;
+    }
+
+    .about-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-image {
+        max-width: 300px;
+    }
+
+    .contact {
+        padding: 3.5rem 1.5rem;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .nav-inner {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .nav-links {
+        gap: 1.2rem;
     }
 }
