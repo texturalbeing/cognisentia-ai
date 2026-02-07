@@ -72,6 +72,7 @@ a {
 .nav-logo img {
     height: 36px;
     width: auto;
+    max-width: none;
     opacity: 0.9;
 }
 
@@ -392,6 +393,10 @@ a {
 
     .nav-inner {
         padding: 0.8rem 1.5rem;
+    }
+
+    .nav-logo img {
+        height: 28px;
     }
 
     .nav-links {
