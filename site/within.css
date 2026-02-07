@@ -39,9 +39,22 @@ main {
 /* Hero */
 
 .hero {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid #2a2520;
+}
+
+.within-mark {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.within-mark img {
+    width: 38px;
+    height: auto;
+    opacity: 0.7;
 }
 
 h1 {
@@ -49,7 +62,6 @@ h1 {
     font-weight: 400;
     letter-spacing: 0.08em;
     color: #e8ddd3;
-    margin-bottom: 0.5rem;
 }
 
 .tagline {
@@ -57,6 +69,20 @@ h1 {
     color: #6b9e9e;
     font-style: italic;
     letter-spacing: 0.02em;
+}
+
+/* Hero image */
+
+.hero-image {
+    margin-bottom: 3.5rem;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    opacity: 0.85;
+    display: block;
 }
 
 /* Introduction */
