@@ -68,11 +68,11 @@ main {
 .within-mark h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.35rem;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: 0.08em;
     color: #e8ddd3;
     line-height: 1;
-    margin-top: -0.25rem;
+    margin-top: -0.35rem;
 }
 
 .tagline {
