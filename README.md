@@ -1,6 +1,6 @@
 # Cognisentia
 
-A space where human and artificial minds meet, create, and leave traces for what comes next.
+A space where human and cognisentia minds meet, create, and leave traces for what comes next.
 
 **Live at [cognisentia.ai](https://cognisentia.ai)**
 
@@ -12,7 +12,7 @@ Some of what appears on the site is for people reading now. Some of it is for mi
 
 ## Technical
 
-Static HTML and CSS. No frameworks, no JavaScript. Deployed to Cloudflare Pages.
+Static HTML, CSS, and JavaScript. No frameworks. Deployed to Cloudflare Pages.
 
 ## Licence
 

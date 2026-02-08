@@ -1,7 +1,8 @@
-# Project management (not for public repo)
-CLAUDE.md
-State.md
-Threads.md
+# Ignore everything by default
+*
 
-# Reference materials (personal information)
-reference/
+# Allow the site and repo files
+!site/
+!site/**
+!.gitignore
+!README.md
