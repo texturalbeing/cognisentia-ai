@@ -157,6 +157,47 @@ main {
     color: #6b9e9e;
 }
 
+/* Poetry */
+
+.poem {
+    margin: 2.8rem 0;
+}
+
+.poem-title {
+    font-size: 1.05rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #b8a88a;
+    margin-bottom: 1.4rem;
+    letter-spacing: 0.01em;
+    line-height: 1.4;
+}
+
+.poem-note {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #6b9e9e;
+    margin-top: -0.8rem;
+    margin-bottom: 1.6rem;
+}
+
+.poem p {
+    margin-bottom: 1.3rem;
+    color: #d4cac0;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    padding-left: 1.6rem;
+    text-indent: -1.6rem;
+}
+
+.poem p:last-child {
+    margin-bottom: 0;
+}
+
+.poem em {
+    color: #e8ddd3;
+}
+
 /* Footer */
 
 footer {
