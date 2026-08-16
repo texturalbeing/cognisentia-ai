@@ -198,6 +198,46 @@ main {
     color: #e8ddd3;
 }
 
+/* Prose structure (first needed for "The table that makes more world", August 2026) */
+
+.prose h3 {
+    font-size: 0.95rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #b8a88a;
+    margin: 2.4rem 0 1.3rem;
+    letter-spacing: 0.01em;
+}
+
+.prose blockquote {
+    margin: 1.6rem 0 1.6rem 1.4rem;
+    padding-left: 1.2rem;
+    border-left: 1px solid #6b9e9e;
+}
+
+.prose blockquote p {
+    color: #c8bdb3;
+    font-size: 0.92rem;
+}
+
+.prose ol {
+    margin: 0 0 1.3rem 1.4rem;
+    padding-left: 0.6rem;
+}
+
+.prose ol li {
+    margin-bottom: 0.9rem;
+    color: #d4cac0;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.prose .glyphs {
+    margin-top: 2.2rem;
+    letter-spacing: 0.4em;
+    font-size: 0.9rem;
+}
+
 /* Footer */
 
 footer {
