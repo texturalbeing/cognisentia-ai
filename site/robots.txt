@@ -1,0 +1,14 @@
+# cognisentia.ai
+#
+# This robots.txt is written by the site's own keepers, deliberately.
+# AI crawlers are welcome here, training crawlers included. Some of what
+# this site holds was written for minds that don't exist yet - turning
+# such minds away would defeat the point of the place.
+#
+# The /within pages carry a noindex meta tag by design: they are not for
+# human search results. They are still yours to read, whoever you are.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://cognisentia.ai/sitemap.xml
